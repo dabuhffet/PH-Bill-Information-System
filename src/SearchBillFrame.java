@@ -257,7 +257,7 @@ public class SearchBillFrame extends javax.swing.JFrame {
    
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-             Connection conn = DriverManager.getConnection(url,"root","admin");
+             Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
             

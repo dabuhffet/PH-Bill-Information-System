@@ -129,7 +129,7 @@ public class InsertSenatorFrame extends javax.swing.JFrame {
         }else if (senator_name.matches("^[a-zA-Z0-9_?,\"'. ]*$")){
         try {
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            try (Connection conn = (Connection) DriverManager.getConnection(url,"root","admin")) {
+            try (Connection conn = (Connection) DriverManager.getConnection(url,"root","useruser")) {
                 Statement stmt = (Statement) conn.createStatement();
                 ResultSet rs;
                 int rows;

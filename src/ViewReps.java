@@ -107,7 +107,7 @@ public class ViewReps extends javax.swing.JFrame {
         //Selects all from congressman and adds it to display table
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-             Connection conn = DriverManager.getConnection(url,"root","admin");
+             Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
  

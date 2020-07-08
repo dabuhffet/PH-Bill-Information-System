@@ -340,7 +340,7 @@ public class UpdateBill extends javax.swing.JFrame {
         //finds the filed_by variable in the list of senators and house reps
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            java.sql.Connection conn = DriverManager.getConnection(url,"root","admin");
+            java.sql.Connection conn = DriverManager.getConnection(url,"root","useruser");
             java.sql.Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -358,7 +358,7 @@ public class UpdateBill extends javax.swing.JFrame {
         }
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            java.sql.Connection conn = DriverManager.getConnection(url,"root","admin");
+            java.sql.Connection conn = DriverManager.getConnection(url,"root","useruser");
             java.sql.Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -417,7 +417,7 @@ public class UpdateBill extends javax.swing.JFrame {
             }
             try {
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            try (com.mysql.jdbc.Connection conn = (com.mysql.jdbc.Connection) DriverManager.getConnection(url,"root","admin")) {
+            try (com.mysql.jdbc.Connection conn = (com.mysql.jdbc.Connection) DriverManager.getConnection(url,"root","useruser")) {
                 com.mysql.jdbc.Statement stmt = (com.mysql.jdbc.Statement) conn.createStatement();
                 ResultSet rs;
                 int rows;
@@ -441,7 +441,7 @@ public class UpdateBill extends javax.swing.JFrame {
         boolean notFound = true;
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            Connection conn = DriverManager.getConnection(url,"root","admin");
+            Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -602,7 +602,7 @@ public class UpdateBill extends javax.swing.JFrame {
     private void addToDisplay(){
          try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-             Connection conn = DriverManager.getConnection(url,"root","admin");
+             Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
  

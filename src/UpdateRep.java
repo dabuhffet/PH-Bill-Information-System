@@ -186,7 +186,7 @@ public class UpdateRep extends javax.swing.JFrame {
         boolean notFound = true;
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            Connection conn = DriverManager.getConnection(url,"root","admin");
+            Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -229,7 +229,7 @@ public class UpdateRep extends javax.swing.JFrame {
         }else{
             try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            Connection conn = DriverManager.getConnection(url,"root","admin");
+            Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             int rows;
  
@@ -246,7 +246,7 @@ public class UpdateRep extends javax.swing.JFrame {
     private void addToDisplay(){
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-             Connection conn = DriverManager.getConnection(url,"root","admin");
+             Connection conn = DriverManager.getConnection(url,"root","useruser");
             Statement stmt = conn.createStatement();
             ResultSet rs;
  

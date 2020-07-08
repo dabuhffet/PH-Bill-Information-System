@@ -338,7 +338,7 @@ public class InsertBillFrame extends javax.swing.JFrame {
         boolean found = false;
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            java.sql.Connection conn = DriverManager.getConnection(url,"root","admin");
+            java.sql.Connection conn = DriverManager.getConnection(url,"root","useruser");
             java.sql.Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -356,7 +356,7 @@ public class InsertBillFrame extends javax.swing.JFrame {
         }
         try {   
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            java.sql.Connection conn = DriverManager.getConnection(url,"root","admin");
+            java.sql.Connection conn = DriverManager.getConnection(url,"root","useruser");
             java.sql.Statement stmt = conn.createStatement();
             ResultSet rs;
  
@@ -414,7 +414,7 @@ public class InsertBillFrame extends javax.swing.JFrame {
             }
             try {
             String url = "jdbc:mysql://localhost:3306/bill_info_system?zeroDateTimeBehavior=convertToNull";
-            try (Connection conn = (Connection) DriverManager.getConnection(url,"root","admin")) {
+            try (Connection conn = (Connection) DriverManager.getConnection(url,"root","useruser")) {
                 Statement stmt = (Statement) conn.createStatement();
                 int rows;
                                                                                                                                                         //bill_no str,bill_name_str,approved_in_str,hearing_no,filed_by_str,filed_at_str,date_filed_str
